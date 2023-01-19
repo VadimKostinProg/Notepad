@@ -1,0 +1,160 @@
+﻿<Window x:Class="NotePad.Font"
+        x:Name="FontWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NotePad"
+        mc:Ignorable="d"
+        Title="Font" Height="450" Width="550" FontSize="16" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="FontWindow_Loaded">
+    <Grid Background="#FFF9F9F9">
+        <Label Content="Font:" HorizontalAlignment="Left" Margin="41,25,0,0" 
+               VerticalAlignment="Top" Height="29" Width="46"/>
+        <TextBox x:Name="Font_TextBox" HorizontalAlignment="Left" Margin="30,54,0,0" 
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="211"
+                 IsReadOnly="True"/>
+        <ListBox x:Name="FontFamily_ListBox" Margin="30,77,0,0" HorizontalAlignment="Left" Width="211" Height="106"
+                 VerticalAlignment="Top" SelectionChanged="FontFamily_ListBox_SelectionChanged" FontFamily="Papyrus">
+            <ListBoxItem Content="Agency FB" FontFamily="Agency FB"/>
+            <ListBoxItem Content="ALGERIAN" FontFamily="ALGERIAN"/>
+            <ListBoxItem Content="Arial" FontFamily="Arial"/>
+            <ListBoxItem Content="Arial Black" FontFamily="Arial Black"/>
+            <ListBoxItem Content="Arial Narrow" FontFamily="Arial Narrow"/>
+            <ListBoxItem Content="Bahnschrift" FontFamily="Bahnschrift"/>
+            <ListBoxItem Content="Bauhaus 93" FontFamily="Bauhaus 93"/>
+            <ListBoxItem Content="Bell MT" FontFamily="Bell MT"/>
+            <ListBoxItem Content="Berlin Sans FB" FontFamily="Berlin Sans FB"/>
+            <ListBoxItem Content="Bernard MT Condensed" FontFamily="Bernard MT Condensed"/>
+            <ListBoxItem Content="Blackadder ITC" FontFamily="Blackadder ITC"/>
+            <ListBoxItem Content="Bodoni MT" FontFamily="Bodoni MT"/>
+            <ListBoxItem Content="Book Antiqua" FontFamily="Book Antiqua"/>
+            <ListBoxItem Content="Bookman Old Style" FontFamily="Bookman Old Style"/>
+            <ListBoxItem Content="Bradley Hand ITC" FontFamily="Bradley Hand ITC"/>
+            <ListBoxItem Content="Britannic Bold" FontFamily="Britannic Bold"/>
+            <ListBoxItem Content="Broadway" FontFamily="Broadway"/>
+            <ListBoxItem Content="Brush Script MT" FontFamily="Brush Script MT"/>
+            <ListBoxItem Content="Calibri" FontFamily="Calibri"/>
+            <ListBoxItem Content="Californian FB" FontFamily="Californian FB"/>
+            <ListBoxItem Content="Calisto MT" FontFamily="Calisto MT"/>
+            <ListBoxItem Content="Cambria" FontFamily="Cambria"/>
+            <ListBoxItem Content="Candara" FontFamily="Candara"/>
+            <ListBoxItem Content="Cascadia Code" FontFamily="Cascadia Code"/>
+            <ListBoxItem Content="Castellar" FontFamily="Castellar"/>
+            <ListBoxItem Content="Centaur" FontFamily="Centaur"/>
+            <ListBoxItem Content="Century" FontFamily="Century"/>
+            <ListBoxItem Content="Chiller" FontFamily="Chiller"/>
+            <ListBoxItem Content="Colonna MT" FontFamily="Colonna MT"/>
+            <ListBoxItem Content="Comic Sans MS" FontFamily="Comic Sans MS"/>
+            <ListBoxItem Content="Consolas" FontFamily="Consolas"/>
+            <ListBoxItem Content="Constantia" FontFamily="Constantia"/>
+            <ListBoxItem Content="Cooper Black" FontFamily="Cooper Black"/>
+            <ListBoxItem Content="Corbel" FontFamily="Corbel"/>
+            <ListBoxItem Content="Courier New" FontFamily="Courier New"/>
+            <ListBoxItem Content="Curlz MT" FontFamily="Curlz MT"/>
+            <ListBoxItem Content="Dubai" FontFamily="Dubai"/>
+            <ListBoxItem Content="Ebrima" FontFamily="Ebrima"/>
+            <ListBoxItem Content="Edwardian Script ITC" FontFamily="Edwardian Script ITC"/>
+            <ListBoxItem Content="Elephant" FontFamily="Elephant"/>
+            <ListBoxItem Content="Engravers MT" FontFamily="Engravers MT"/>
+            <ListBoxItem Content="Eras ITC" FontFamily="Eras ITC"/>
+            <ListBoxItem Content="Forte" FontFamily="Forte"/>
+            <ListBoxItem Content="Franclin Gothic Book" FontFamily="Franclin Gothic Book"/>
+            <ListBoxItem Content="Freestyle Script" FontFamily="Freestyle Script"/>
+            <ListBoxItem Content="French Script MJ" FontFamily="French Script MT"/>
+            <ListBoxItem Content="Gabriola" FontFamily="Gabriola"/>
+            <ListBoxItem Content="Gill Sans MT" FontFamily="Gill Sans MT"/>
+            <ListBoxItem Content="Global Monospace" FontFamily="Global Monospace"/>
+            <ListBoxItem Content="Goudy Old Style" FontFamily="Goudy Old Style"/>
+            <ListBoxItem Content="Goudy Old Style" FontFamily="Goudy Old Style"/>
+            <ListBoxItem Content="Goudy Stout" FontFamily="Goudy Stout"/>
+            <ListBoxItem Content="Haettenschweiler" FontFamily="Haettenschweiler"/>
+            <ListBoxItem Content="Harlow Solid Italic" FontFamily="Harlow Solid Italic"/>
+            <ListBoxItem Content="Harrington" FontFamily="Harrington"/>
+            <ListBoxItem Content="Impact" FontFamily="Impact"/>
+            <ListBoxItem Content="Imprint MT Shadow" FontFamily="Imprint MT Shadow"/>
+            <ListBoxItem Content="Informal Roman" FontFamily="Informal Roman"/>
+            <ListBoxItem Content="Ink Free" FontFamily="Ink Free"/>
+            <ListBoxItem Content="Jokerman" FontFamily="Jokerman"/>
+            <ListBoxItem Content="Juice ITC" FontFamily="Juice ITC"/>
+            <ListBoxItem Content="Kristen ITC" FontFamily="Kristen ITC"/>
+            <ListBoxItem Content="Kunstler Script" FontFamily="Kunstler Script"/>
+            <ListBoxItem Content="Leelawadee" FontFamily="Leelawadee"/>
+            <ListBoxItem Content="Lucida Bright" FontFamily="Lucida Bright"/>
+            <ListBoxItem Content="Magneto" FontFamily="Magneto"/>
+            <ListBoxItem Content="Matura MT Script Capitals" FontFamily="Matura MT Script Capitals"/>
+            <ListBoxItem Content="Mistral" FontFamily="Mistral"/>
+            <ListBoxItem Content="Modern No. 20" FontFamily="Modern No. 20"/>
+            <ListBoxItem Content="Monotype Corsiva" FontFamily="Monotype Corsiva"/>
+            <ListBoxItem Content="MV Boli" FontFamily="MV Boli"/>
+            <ListBoxItem Content="OCR A Extended" FontFamily="OCR A Extended"/>
+            <ListBoxItem Content="Old English Text MT" FontFamily="Old English Text MT"/>
+            <ListBoxItem Content="Onyx" FontFamily="Onyx"/>
+            <ListBoxItem Content="Palace Script MT" FontFamily="Palace Script MT"/>
+            <ListBoxItem Content="Parchment" FontFamily="Parchment"/>
+            <ListBoxItem Content="Playbill" FontFamily="Playbill"/>
+            <ListBoxItem Content="Pristina" FontFamily="Pristina"/>
+            <ListBoxItem Content="Rage Italic" FontFamily="Rage Italic"/>
+            <ListBoxItem Content="Rockwell Condensed" FontFamily="Rockwell Condensed"/>
+            <ListBoxItem Content="Script MT Bold" FontFamily="Script MT Bold"/>
+            <ListBoxItem Content="Segoe UI" FontFamily="Segoe UI"/>
+            <ListBoxItem Content="Showcard Gothic" FontFamily="Showcard Gothic"/>
+            <ListBoxItem Content="Snap ITC" FontFamily="Snap ITC"/>
+            <ListBoxItem Content="Stencil" FontFamily="Stencil"/>
+            <ListBoxItem Content="Symbol" FontFamily="Symbol"/>
+            <ListBoxItem Content="Tahoma" FontFamily="Tahoma"/>
+            <ListBoxItem Content="Tempus Sans ITC" FontFamily="Tempus Sans ITC"/>
+            <ListBoxItem Content="Times New Roman" FontFamily="Times New Roman"/>
+            <ListBoxItem Content="Verdana" FontFamily="Verdana"/>
+            <ListBoxItem Content="Viner Hand ITC" FontFamily="Viner Hand ITC"/>
+            <ListBoxItem Content="Vivaldi" FontFamily="Vivaldi"/>
+            <ListBoxItem Content="Vladimir Script" FontFamily="Vladimir Script"/>
+            <ListBoxItem Content="Wide Latin" FontFamily="Wide Latin"/>
+            <ListBoxItem Content="Yu Gothic" FontFamily="Yu Gothic"/>
+        </ListBox>
+        <Label Content="Style:" HorizontalAlignment="Left" Margin="270,25,0,0" 
+            VerticalAlignment="Top" Height="29" Width="46"/>
+        <TextBox x:Name="Style_TextBox" HorizontalAlignment="Left" Margin="260,54,0,0" 
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="160"
+                 IsReadOnly="True"/>
+        <ListBox x:Name="FontStyle_ListBox" Margin="260,77,0,0" HorizontalAlignment="Left"
+                 Width="160" Height="106" VerticalAlignment="Top" 
+                 SelectionChanged="FontStyle_ListBox_SelectionChanged">
+            <ListBoxItem Content="Normal"/>
+            <ListBoxItem Content="Italic"/>
+            <ListBoxItem Content="Bold"/>
+            <ListBoxItem Content="Italic Bold"/>
+        </ListBox>
+        <Label Content="Size:" HorizontalAlignment="Left" Margin="434,25,0,0" 
+            VerticalAlignment="Top" Height="29" Width="46"/>
+        <TextBox x:Name="Size_TextBox" HorizontalAlignment="Left" Margin="440,54,0,0" 
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="79"
+                 LostFocus="LostFocus_TextBox" KeyDown="KeyDown_TextBox"/>
+        <ListBox x:Name="FontSize_ListBox" Margin="440,77,0,0" HorizontalAlignment="Left" 
+                 Width="79" Height="106" VerticalAlignment="Top" SelectionChanged="FontSize_ListBox_SelectionChanged"
+                 >
+            <ListBoxItem Content="8"/>
+            <ListBoxItem Content="9"/>
+            <ListBoxItem Content="10"/>
+            <ListBoxItem Content="11"/>
+            <ListBoxItem Content="12"/>
+            <ListBoxItem Content="14"/>
+            <ListBoxItem Content="16"/>
+            <ListBoxItem Content="18"/>
+            <ListBoxItem Content="20"/>
+            <ListBoxItem Content="22"/>
+            <ListBoxItem Content="24"/>
+            <ListBoxItem Content="26"/>
+            <ListBoxItem Content="28"/>
+            <ListBoxItem Content="36"/>
+            <ListBoxItem Content="48"/>
+            <ListBoxItem Content="72"/>
+        </ListBox>
+        <GroupBox Header="Example" BorderBrush="#FF9E9E9E" BorderThickness="1" Margin="260,217,31,0" Height="113" VerticalAlignment="Top">
+            <TextBlock x:Name="Example_TextBlock" TextWrapping="Wrap" Text="AaBbYyZz" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </GroupBox>
+        <Button Content="OK" HorizontalAlignment="Left" Margin="306,371,0,0"
+                VerticalAlignment="Top" Height="25" Width="98" Click="OK_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="421,371,0,0" 
+                VerticalAlignment="Top" Height="25" Width="98" Click="Cancel_Click"/>
+    </Grid>
+</Window>
